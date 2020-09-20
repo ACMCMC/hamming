@@ -1,4 +1,4 @@
-![C CI](https://github.com/ACMCMC/hamming/workflows/C%2B%2B+CI/badge.svg)
+![C CI](https://github.com/ACMCMC/hamming/workflows/Test%20CPP/badge.svg)
 
 # Hamming
 
