@@ -12,3 +12,6 @@ objects:
 
 clean:
 	-rm *.o
+
+check:
+	echo 'TODO: Create unit tests for the code'
