@@ -1,3 +1,5 @@
+![C CI](https://github.com/ACMCMC/hamming/workflows/C%2B%2B+CI/badge.svg)
+
 # Hamming
 
 This repo is a set of tests for Hamming codes written in C++.
