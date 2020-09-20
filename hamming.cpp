@@ -5,13 +5,12 @@
 
 int main(int argc, char **argv)
 {
-    printf("Bienvenido.\n");
 
     std::vector<int> * bytes = new std::vector<int>();
 
     if (argc != 2)
     {
-        printf("Debe especificarse un argumento como cadena de 0s y 1s, p.ej.: \"10001010\"\n");
+        printf("A string of 0s and 1s must be passed as an argument; e.g.: \"10001010\"\n");
         return 1;
     }
 
@@ -20,16 +19,16 @@ int main(int argc, char **argv)
         bytes->push_back((argv[1][i]) - '0');
     }
 
-    printf("El vector es: ");
+    printf("The read vector is: ");
     for (int i = 0; i < bytes->size(); i++)
     {
         printf("%d ", bytes->at(i));
     }
     printf("\n");
 
-    HammingLibrary::HammingResult resultado = HammingLibrary::checkHamming(*bytes, argc);
+    HammingLibrary::HammingResult result = HammingLibrary::checkHamming(*bytes, argc);
 
-    printf("ESCANEADOS %d dígitos. RESULTADO: %d\n", argc, resultado);
+    printf("SCANNED %d digits. RESULT: %d\n", argc, result);
 
     return 0;
 }
