@@ -9,7 +9,7 @@ int main(int argc, char **argv)
 
     std::vector<int> * bytes = new std::vector<int>();
 
-    if (argc != 1)
+    if (argc != 2)
     {
         printf("Debe especificarse un argumento como cadena de 0s y 1s, p.ej.: \"10001010\"\n");
         return 1;
