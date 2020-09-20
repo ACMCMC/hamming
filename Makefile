@@ -5,8 +5,7 @@ headers = HammingLibrary.hpp
 objects := $(patsubst %.cpp,%.o,$(wildcard *.cpp))
 
 hamming: objects
-	echo 'Generando programa final...'
-	g++ -o hamming.exe -I $(headers) $(objects)
+	g++ -o hamming.out -I $(headers) $(objects)
 
 objects:
 	g++ -c $(files)
