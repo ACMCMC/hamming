@@ -12,5 +12,5 @@ namespace HammingLibrary
         INVALID_PARAMS,
     };
 
-    HammingResult checkHamming(std::vector<int> digits, int count);
+    HammingResult checkHamming(std::vector<int> digits);
 } // namespace HammingLibrary

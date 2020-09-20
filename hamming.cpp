@@ -2,6 +2,7 @@
 #include <vector>
 #include <stdio.h>
 #include <stdlib.h>
+#include <algorithm>
 
 int main(int argc, char **argv)
 {
@@ -19,6 +20,8 @@ int main(int argc, char **argv)
         bytes->push_back((argv[1][i]) - '0');
     }
 
+    /*std::reverse(bytes->begin(), bytes->end());*/
+
     printf("The read vector is: ");
     for (int i = 0; i < bytes->size(); i++)
     {
@@ -26,9 +29,11 @@ int main(int argc, char **argv)
     }
     printf("\n");
 
-    HammingLibrary::HammingResult result = HammingLibrary::checkHamming(*bytes, argc);
+    HammingLibrary::HammingResult result = HammingLibrary::checkHamming(*bytes);
 
-    printf("SCANNED %d digits. RESULT: %d\n", argc, result);
+    printf("SCANNED %d digits. RESULT: %d\n", bytes->size(), result);
+
+    delete(bytes);
 
     return 0;
 }
