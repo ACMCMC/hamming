@@ -20,8 +20,6 @@ int main(int argc, char **argv)
         bytes->push_back((argv[1][i]) - '0');
     }
 
-    /*std::reverse(bytes->begin(), bytes->end());*/
-
     printf("The read vector is: ");
     for (int i = 0; i < bytes->size(); i++)
     {
