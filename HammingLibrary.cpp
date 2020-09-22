@@ -17,7 +17,6 @@ namespace HammingLibrary
         {
             if (digits[i])
             {
-                printf("El bit %d es 1. %d\n", i, parity_check);
                 parity_check = parity_check ^ i;
             }
         }
